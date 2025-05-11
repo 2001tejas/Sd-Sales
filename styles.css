@@ -1,0 +1,178 @@
+body {
+    /* background: linear-gradient(to right, #001f3f, #ffffff); */
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+    background: rgba(0, 31, 63, 0.9);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 15px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+    font-size: 28px !important;
+    font-weight: 700;
+    color: white !important;
+}
+
+.navbar a {
+    color: white !important;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.section {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    padding: 100px 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.spacer {
+    margin-top: 90px;
+}
+
+.about-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.about-list {
+    list-style: none;
+    padding-left: 0;
+    position: relative;
+}
+
+.about-list li {
+    margin: 20px 0;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    position: relative;
+}
+
+.products-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-card {
+    /* background: rgba(255, 255, 255, 0.1); */
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.footer {
+    background: #001f3f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.map-container {
+    max-width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.footer a {
+    color: white;
+    margin: 0 6px;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.about-section {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    padding: 120px 20px;
+    border-radius: 15px;
+}
+
+.about-intro {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+}
+
+.about-card {
+    background: white;
+    border-radius: 12px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+    text-align: center;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.about-card i {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-weight: 600;
+}
+
+.about-card h5 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about-card p {
+    font-size: 0.95rem;
+    color: #555;
+}
