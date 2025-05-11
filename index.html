@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 
 <head>
     <meta charset="UTF-8">
@@ -16,12 +16,9 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="images/favicon.png" alt="Logo" style="height: 60px; margin-right: 10px;">
-                SD Sales
-            </a>
+            <a class="navbar-brand" href="#">SD Sales</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -42,7 +39,7 @@
         <div class="container text-center">
             <h2 class="mb-4">About Us</h2>
             <p class="about-intro">
-                We are a dedicated team of distributors committed to delivering top-quality products and exceptional
+                We are a dedicated and committed to deliver top-quality products and exceptional
                 service.
                 Since 2015, we have partnered with trusted brands and built strong relationships across the industry.
             </p>
@@ -71,7 +68,7 @@
                 </div>
             </div>
 
-            <div class="row mt-3">
+            <div class="row mt-5">
                 <div class="col-md-6 mb-4">
                     <div class="about-card">
                         <i class="bi bi-people-fill"></i>
@@ -91,58 +88,77 @@
         </div>
     </div>
 
-
     <div id="products" class="section">
         <h2>Our Products</h2>
         <div class="products-container">
 
-            <div class="product-card" data-bs-toggle="modal" data-bs-target="#modalRacold">
-                <h4>Racold Geysers</h4>
-                <img src="images\download-removebg-preview (1).png" alt="Racold Geysers" class="img-fluid mb-2">
+            <div class="product-card">
+                <h4 data-bs-toggle="modal" data-bs-target="#modalRacold">Racold Geysers</h4>
+                <img src="images/download-removebg-preview (1).png" alt="Racold Geysers" class="img-fluid mb-2"
+                    data-bs-toggle="modal" data-bs-target="#modalRacold">
                 <a href="catalogs\Racold Range Catalogue 2023.pdf" class="btn btn-primary btn-sm" download>Download
                     Catalog</a>
             </div>
 
-            <div class="product-card" data-bs-toggle="modal" data-bs-target="#modalOceco">
-                <h4>Oceco Fans</h4>
-                <img src="images\download__1_-removebg-preview.png" alt="Oceco Fans" class="img-fluid mb-2">
-                <a href="catalogs\oceco-brochure.pdf" class="btn btn-primary btn-sm" download>Download Catalog</a>
+            <div class="product-card">
+                <h4 data-bs-toggle="modal" data-bs-target="#modalOceco">Oceco Fans</h4>
+                <img src="images/download__1_-removebg-preview.png" alt="Oceco Fans" class="img-fluid mb-2"
+                    data-bs-toggle="modal" data-bs-target="#modalOceco">
+                <a href="catalogs/oceco-brochure.pdf" class="btn btn-primary btn-sm" download>
+                    Download Catalog
+                </a>
             </div>
 
-            <div class="product-card" data-bs-toggle="modal" data-bs-target="#modalUsha">
-                <h4>Usha Appliances</h4>
-                <img src="images\download-removebg-preview.png" alt="Usha Appliances" class="img-fluid mb-2">
-                <a href="catalogs/Usha-Appliances.pdf" class="btn btn-primary btn-sm" download>Download Catalog</a>
+            <div class="product-card">
+                <h4 data-bs-toggle="modal" data-bs-target="#modalUsha">Usha Appliances</h4>
+                <img src="images/download-removebg-preview.png" alt="Usha Appliances" class="img-fluid mb-2"
+                    data-bs-toggle="modal" data-bs-target="#modalUsha">
+                <a href="catalogs/Usha-Appliances.pdf" class="btn btn-primary btn-sm" download>
+                    Download Catalog
+                </a>
             </div>
         </div>
     </div>
-
+    
     <div class="modal fade" id="modalRacold" tabindex="-1" aria-labelledby="modalRacoldLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalRacoldLabel">Racold Geysers</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="modalRacoldLabel">
+                        <i class="bi bi-droplet-half me-2"></i>Racold Geysers
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-body">
 
-                    <div class="modal-body">
-                        <h5 class="modal-title">Ariston at a Glance</h5>
-                        <p>
+                <!-- Make modal-body scrollable -->
+                <div class="modal-body bg-light p-0" style="max-height: 70vh; overflow-y: auto;">
+
+                    <!-- Sticky title -->
+                    <div class="bg-white p-3 shadow-sm sticky-top border-bottom" style="top: 0; z-index: 1020;">
+                        <h5 class="text-primary m-0">Ariston at a Glance</h5>
+                    </div>
+
+                    <!-- Scrollable content -->
+                    <div class="p-3">
+                        <p class="lead text-muted">
                             Ariston Group is a global leader in thermal comfort and energy efficiency. All over the
                             world, Ariston Group is synonymous with comfort, energy efficiency, and respect for the
                             environment, thanks to:
                         </p>
-                        <ul>
-                            <li>Its renewable and high-efficiency products</li>
-                            <li>Its plants in compliance with the most advanced production standards</li>
-                            <li>Excellent pre-sales and after-sales customer support services</li>
+                        <ul class="list-group list-group-flush mb-3">
+                            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i>Its
+                                renewable and high-efficiency products</li>
+                            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i>Its
+                                plants in compliance with the most advanced production standards</li>
+                            <li class="list-group-item"><i
+                                    class="bi bi-check-circle-fill text-success me-2"></i>Excellent pre-sales and
+                                after-sales customer support services</li>
                         </ul>
-                        <p>
+                        <p class="text-muted">
                             Ariston Group boasts a strong and long-established presence in Europe, and a growing
                             exposure to North America and the emerging economies of Asia, Middle East, and Africa.
                         </p>
-                        <p>
+                        <p class="text-muted">
                             Global presence and local resources: our numbers describe a solid and growing Group rooted
                             in its values and the local territory.
                         </p>
@@ -156,143 +172,226 @@
     <div class="modal fade" id="modalOceco" tabindex="-1" aria-labelledby="modalOcecoLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalOcecoLabel">Oceco Fans</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="modalOcecoLabel">
+                        <i class="bi bi-fan me-2"></i>Oceco Fans
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-body">
-                    <h5 class="modal-title">Oceco at a Glance</h5>
-                    <p>
-                        Oceco began its journey in 2015 with a mission to reduce energy consumption using engineering
-                        innovation. Founded by two passionate engineers, the company identified that fans account for
-                        26% of electricity bills in Indian households.
-                    </p>
-                    <ul>
-                        <li>Introduced BLDC technology-based fans that consume only 28W of power</li>
-                        <li>Products designed with premium aesthetics and remote-control functionality</li>
-                        <li>Wide range of energy-efficient fans for homes, offices, hospitals, schools, and industries
-                        </li>
-                    </ul>
-                    <p>
-                        After seven years of dedicated innovation and customer focus, Oceco has built a strong presence
-                        with lakhs of satisfied customers across India.
-                    </p>
-                    <p>
-                        With a vision to empower people and provide eco-friendly solutions, Oceco continues to innovate
-                        in the field of energy-efficient appliances.
-                    </p>
+
+                <!-- Scrollable content area -->
+                <div class="modal-body bg-light p-0" style="max-height: 70vh; overflow-y: auto;">
+
+                    <!-- Sticky sub-header -->
+                    <div class="bg-white p-3 shadow-sm sticky-top border-bottom" style="top: 0; z-index: 1020;">
+                        <h5 class="text-primary m-0">Oceco at a Glance</h5>
+                    </div>
+
+                    <!-- Main content -->
+                    <div class="p-3">
+                        <p class="lead text-muted">
+                            Oceco began its journey in 2015 with a mission to reduce energy consumption using
+                            engineering
+                            innovation. Founded by two passionate engineers, the company identified that fans account
+                            for
+                            26% of electricity bills in Indian households.
+                        </p>
+                        <ul class="list-group list-group-flush mb-3">
+                            <li class="list-group-item">
+                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                Introduced BLDC technology-based fans that consume only 28W of power
+                            </li>
+                            <li class="list-group-item">
+                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                Products designed with premium aesthetics and remote-control functionality
+                            </li>
+                            <li class="list-group-item">
+                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                Wide range of energy-efficient fans for homes, offices, hospitals, schools, and
+                                industries
+                            </li>
+                        </ul>
+                        <p class="text-muted">
+                            After seven years of dedicated innovation and customer focus, Oceco has built a strong
+                            presence
+                            with lakhs of satisfied customers across India.
+                        </p>
+                        <p class="text-muted">
+                            With a vision to empower people and provide eco-friendly solutions, Oceco continues to
+                            innovate
+                            in the field of energy-efficient appliances.
+                        </p>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Usha Modal -->
     <div class="modal fade" id="modalUsha" tabindex="-1" aria-labelledby="modalUshaLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalUshaLabel">Usha Appliances</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <h5 class="modal-title">Usha at a Glance</h5>
-                    <p>
-                        Usha International is a trusted name in India's consumer durables sector, known for its legacy
-                        of excellence, innovation, and customer-centric products for over 90 years.
-                    </p>
-                    <ul>
-                        <li>A diverse range of products including fans, sewing machines, kitchen appliances, and water
-                            heaters</li>
-                        <li>Strong nationwide distribution and service network ensuring excellent after-sales support
-                        </li>
-                        <li>Focus on innovation, quality, and sustainability through advanced R&D practices</li>
-                    </ul>
-                    <p>
-                        Usha has a robust presence across India and in over 20 countries worldwide, bringing practical,
-                        energy-efficient solutions to millions of homes.
-                    </p>
-                    <p>
-                        With a deep understanding of Indian consumer needs, Usha continues to lead with dependable
-                        appliances that blend tradition and modern technology.
-                    </p>
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="modalUshaLabel">
+                        <i class="bi bi-house-gear-fill me-2"></i>Usha Appliances
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                 </div>
 
+                <!-- Scrollable body -->
+                <div class="modal-body bg-light p-0" style="max-height: 70vh; overflow-y: auto;">
+
+                    <!-- Sticky sub-header -->
+                    <div class="bg-white p-3 shadow-sm sticky-top border-bottom" style="top: 0; z-index: 1020;">
+                        <h5 class="text-primary m-0">Usha at a Glance</h5>
+                    </div>
+
+                    <!-- Modal content -->
+                    <div class="p-3">
+                        <p class="lead text-muted">
+                            Usha International is a trusted name in India's consumer durables sector, known for its
+                            legacy
+                            of excellence, innovation, and customer-centric products for over 90 years.
+                        </p>
+                        <ul class="list-group list-group-flush mb-3">
+                            <li class="list-group-item">
+                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                A diverse range of products including fans, sewing machines, kitchen appliances, and
+                                water heaters
+                            </li>
+                            <li class="list-group-item">
+                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                Strong nationwide distribution and service network ensuring excellent after-sales
+                                support
+                            </li>
+                            <li class="list-group-item">
+                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                Focus on innovation, quality, and sustainability through advanced R&D practices
+                            </li>
+                        </ul>
+                        <p class="text-muted">
+                            Usha has a robust presence across India and in over 20 countries worldwide, bringing
+                            practical,
+                            energy-efficient solutions to millions of homes.
+                        </p>
+                        <p class="text-muted">
+                            With a deep understanding of Indian consumer needs, Usha continues to lead with dependable
+                            appliances that blend tradition and modern technology.
+                        </p>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
 
+    <section class="py-3 py-md-5 py-xl-8">
+        <div class="container pt-5 " id="contact">
+            <div class="row">
+                <div class="col-12 col-md-10 col-lg-8">
+                    <h3 class="fs-5 mb-2 text-secondary text-uppercase">Contact</h3>
+                    <h2 class="display-5 mb-4 mb-md-5 mb-xl-8">We're always on the lookout to work with new clients.
+                        Please get in touch below.</h2>
+                </div>
+            </div>
+        </div>
 
-    <div id="contact" class="section">
-        <h2>Contact Us</h2>
-        <form class="contact-form" action="https://formspree.io/f/xgvkloez" method="POST" autocomplete="off">
-            <div class="mb-3">
-                <label class="form-label">Dealer's Name</label>
-                <input type="text" name="dealer_name" class="form-control" placeholder="Enter your name" required>
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Company Name</label>
-                <input type="text" name="company_name" class="form-control" placeholder="Enter your company name"
-                    required>
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Company Address</label>
-                <textarea class="form-control" name="company_address" rows="2" placeholder="Enter company address"
-                    required></textarea>
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Product Interested In</label>
-                <select class="form-select" name="product" required>
-                    <option value="" disabled selected>Select a product</option>
-                    <option value="racold">Racold Geysers</option>
-                    <option value="oceco">Oceco Fans</option>
-                    <option value="usha">Usha Appliances</option>
-                    <option value="usha">All</option>
-                </select>
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Contact Number</label>
-                <input type="tel" name="contact_number" class="form-control" placeholder="Enter your contact number"
-                    pattern="[0-9]{10}" required>
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Email</label>
-                <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Message</label>
-                <textarea class="form-control" name="message" rows="4" placeholder="Your message..."></textarea>
-            </div>
+        <div class="container">
+            <div class="row gy-4 gy-md-5 gy-lg-0 align-items-stretch">
+                <!-- <div class="col-12 col-lg-6"> -->
+                <div class="col-12 col-lg-6 h-100">
+                    <div class="border overflow-hidden shadow rounded slim-form">
+                        <form action="https://formspree.io/f/xgvkloez" method="POST" autocomplete="off">
+                            <div class="row gy-2 p-3">
 
-            <!-- Optional hidden redirect after submit -->
-            <input type="hidden" name="_redirect" value="https://2001tejas.github.io/Sd-Sales/thank-you">
+                                <div class="col-12">
+                                    <label for="dealer_name" class="form-label">Dealer's Name <span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" name="dealer_name" required>
+                                </div>
 
+                                <div class="col-12">
+                                    <label for="company_name" class="form-label">Company Name <span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" name="company_name" required>
+                                </div>
 
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-    </div>
+                                <div class="col-12">
+                                    <label for="company_address" class="form-label">Company Address <span
+                                            class="text-danger">*</span></label>
+                                    <textarea class="form-control" name="company_address" rows="2" required></textarea>
+                                </div>
 
-    <section class="container my-5">
-        <div class="row align-items-stretch">
+                                <div class="col-12">
+                                    <label for="product" class="form-label">Product Interested In <span
+                                            class="text-danger">*</span></label>
+                                    <select class="form-select" name="product" required>
+                                        <option value="" disabled selected>Select a product</option>
+                                        <option value="racold">Racold Geysers</option>
+                                        <option value="oceco">Oceco Fans</option>
+                                        <option value="usha">Usha Appliances</option>
+                                        <option value="all">All</option>
+                                    </select>
+                                </div>
 
-            <div class="col-md-5 mb-4 mb-md-0 d-flex flex-column justify-content-center bg-light p-4 rounded shadow">
-                <h5 class="mb-3">Visit Us</h5>
-                <p class="mb-2">GF/27, Arpan Complex</p>
-                <p class="mb-2">Nr. Deluxe Char Rasta, Nr. Passport Office</p>
-                <p class="mb-2">Nizampura Main Road</p>
-                <p class="mb-0">Vadodara - 390002</p>
-            </div>
+                                <div class="col-md-6">
+                                    <label for="contact_number" class="form-label">Contact Number <span
+                                            class="text-danger">*</span></label>
+                                    <input type="tel" class="form-control" name="contact_number" pattern="[0-9]{10}"
+                                        required>
+                                </div>
 
-            <div class="col-md-7">
-                <div class="map-container rounded shadow" style="overflow: hidden; height: 100%;">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.533425357955!2d73.17839697475029!3d22.333478741693124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc9f1c85208bb%3A0xe3a747a9b35da1ad!2sArpan%20Complex!5e0!3m2!1sen!2sin!4v1746548419556!5m2!1sen!2sin"
-                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email <span
+                                            class="text-danger">*</span></label>
+                                    <input type="email" class="form-control" name="email" required>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" name="message" rows="3"></textarea>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="d-grid">
+                                        <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Right column for contact info -->
+                <div class="col-12 col-lg-6 h-100">
+                    <div class="row justify-content-xl-center">
+                        <div class="col-12 col-xl-11">
+                            <div class="mb-4 mb-md-5">
+                                <div class="mb-3 text-primary">
+                                    <!-- location icon -->
+                                </div>
+                                <div>
+                                    <h4 class="mb-2">Visit Us</h4>
+                                    <p class="mb-2">GF/27, Arpan Complex</p>
+                                    <p class="mb-2">Nr. Deluxe Char Rasta, Nr. Passport Office</p>
+                                    <p class="mb-2">Nizampura Main Road</p>
+                                    <p class="mb-0">Vadodara - 390002</p>
+                                </div>
+                            </div>
+                            <div class="rounded overflow-hidden shadow">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.533425357955!2d73.17839697475029!3d22.333478741693124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc9f1c85208bb%3A0xe3a747a9b35da1ad!2sArpan%20Complex!5e0!3m2!1sen!2sin!4v1746548419556!5m2!1sen!2sin"
+                                    width="100%" height="300" style="border:0;" allowfullscreen=""
+                                    loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <footer class="footer">
         <p>&copy; 2025 SD Sales. All Rights Reserved.</p>
