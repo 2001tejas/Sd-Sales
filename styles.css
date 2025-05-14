@@ -109,6 +109,35 @@ h2 {
     padding: 20px;
     margin-top: 50px;
 }
+.carousel-img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover; /* Default for desktop */
+}
+
+/* Adjust on smaller devices */
+@media (max-width: 768px) {
+    .carousel-img {
+        height: auto;
+        max-height: 300px;
+        object-fit: contain;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.2rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.9rem;
+    }
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 12px;
+    border-radius: 8px;
+}
+
 
 .map-container {
     max-width: 800px;
@@ -131,7 +160,7 @@ h2 {
 
 .about-section {
     background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-    padding: 120px 20px;
+    padding: 80px 20px;
     border-radius: 15px;
 }
 
