@@ -238,3 +238,105 @@ h4 {
     display: block;
     transform: translateY(2px);
 }
+
+.brand-card {
+    min-width: 300px;
+    max-width: 90vw;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.brand-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.brand-img {
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.brand-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #007bff;
+    text-align: center;
+}
+
+.brand-text {
+    font-size: 0.875rem;
+    color: #6c757d;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.list-group-item {
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 0.85rem;
+}
+
+.reach-section {
+    background: linear-gradient(135deg, #f8f9fa, #e0f7fa);
+    padding: 20px 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.reach-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #007bff;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.reach-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #007bff;
+    margin: 8px auto 0;
+    border-radius: 2px;
+}
+
+.reach-description {
+    font-size: 1rem;
+    color: #555;
+    max-width: 600px;
+    margin: auto;
+}
+
+.reach-icon {
+    font-size: 2.5rem;
+    color: #17a2b8;
+    margin-bottom: 1rem;
+}
+
+.owner-section {
+    background-color: #fff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
